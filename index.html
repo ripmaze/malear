@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>MaLeAr</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/overall.css">
+    <script src="scripts/portfolio.js"></script>
+
+
+</head>
+<body id="content" data-spy="scroll" data-target=".navbar" data-offset="150">
+<nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+    <a class="navbar-brand" href="index.html">MaLeAr</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLeiste"
+            aria-controls="navbarLeiste" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarLeiste">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutUs">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Das Team</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#marcel">Marcel Weber</a>
+                    <a class="dropdown-item" href="#leah">Leah Hasselbächer</a>
+                    <a class="dropdown-item" href="#ardijan">Ardijan Dulla</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#workingExamples">Working Examples</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<header style="margin-top:40px" class="header">
+    <div class="jumbotron" style="background-color: darkturquoise">
+        <div class="container">
+            <h1 class="display-3">Herzlich Willkommen bei MaLeAr</h1>
+            <p>Das ist unsere Seite. Hier findet ihr Working Examples und Infos über uns</p>
+            <p><a class="btn btn-info btn-lg" href="#">Mehr erfahren &raquo;</a></p>
+        </div>
+    </div>
+</header>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="aboutUs">
+                <hr class="section-heading-spacer">
+                <h2 class="section-heading">Webbasierte Programmierung</h2>
+                <p class="lead">Hier könnte ihre Werbung stehen!</p>
+
+            </div>
+            <div class="col-md-8">
+                <h1>Stundenplan</h1>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Block / Uhrzeit</th>
+                        <th>Montag</th>
+                        <th>Dienstag</th>
+                        <th>Mittwoch</th>
+                        <th>Donnerstag</th>
+                        <th>Freitag</th>
+                    </tr>
+
+                    <tr>
+                        <td>1.Block</td>
+                        <td>Frei</td>
+                        <td rowspan="3">Frei</td>
+                        <td rowspan="2">GASM1-VRL</td>
+                        <td rowspan="2">WebP1-VRL</td>
+                        <td rowspan="2">BWLIS2-PRK</td>
+                    </tr>
+
+                    <tr>
+                        <td>2. Block</td>
+                        <td>WebP1-VRL</td>
+                        <!-- <td rowspan="2">Frei</td> -->
+                    </tr>
+
+                    <tr>
+                        <td>3. Block</td>
+                        <td>Frei</td>
+                        <td>Frei</td>
+                        <td>GASM1-PRK</td>
+                        <td>BWLIS2-VRL</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="6">Mittagspause</td>
+                    </tr>
+
+                    <tr>
+                        <td>4. Block</td>
+                        <td rowspan="3">Frei</td>
+                        <td rowspan="3">Frei</td>
+                        <td rowspan="3">Frei</td>
+                        <td>GASM1-PRK</td>
+                        <td>BWLIS2-VRL</td>
+                    </tr>
+
+                    <tr>
+                        <td>5. Block</td>
+                        <td rowspan="2">Frei</td>
+                        <td rowspan="2">Frei</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>6.Block</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<!-- Das Team -->
+<section>
+    <div class="container">
+        <div class="row">
+
+            <!-- Marcel -->
+            <div class="col-lg-4" id="marcel">
+                <div class="card">
+                    <img class="card-img-top" src="images/Myself_result.jpg" alt="Marcel Weber">
+                    <div class="card-body">
+                        <h4 class="card-title">Marcel Weber</h4>
+                        <hr>
+                        <p class="card-text">Mein Name Ist Marcel Weber. Ich komme aus dem 900-Seelendorf Haintchen im Taunus. Nach meiner Ausbildung zum Zimmerer entschied ich mich dazu Informatik zu studieren, weil mir Informatik mehr liegt als die Holzverarbeitung. Dachte ich zumindest. Nach 2 Semestern wechselte ich deswegen zu Social Media Systems. Dieser Studiengang gefällt mir sehr viel besser und sobald ich es bis zur Vertiefungsphase schaffe, würde ich mich gerne in IT mit einem Anteil Medien vertiefen.</p>
+
+                        <!-- Lebenslauf llMarcel = "Lebenslauf Marcel" -->
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#llMarcel">
+                            Mein Lebenslauf &raquo;
+                        </button>
+
+                        <div class="modal fade" id="llMarcel">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Mein Lebenslauf</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <th>Persönliche Daten</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Marcel Weber</td>
+                                            </tr>
+                                            <td>Geburtsdatum</td>
+                                            <td>07.08.1998</td>
+                                            <tr>
+                                                <td>Adresse</td>
+                                                <td>Im Brühl 5 <br>
+                                                    35460 Staufenberg
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Telefon</td>
+                                                <td>01578/7755953</td>
+                                            </tr>
+                                            <tr>
+                                                <td>E-Mail</td>
+                                                <td>marcel.weber-2@mni.thm.de</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ausbildung</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2020 - lfd</td>
+                                                <td>Technische Hochschule Mittelhessen Fachbereich SMS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018 - 2020</td>
+                                                <td>Technische Hochschule Mittelhessen Fachbereich Informatik</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2017 - 2018</td>
+                                                <td>Friedrich Dessauer Schule Fachabitur <br> Schwerpunkt Bau</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2014 - 2017</td>
+                                                <td>Zimmerei Michael Dombach Ausbildung zum Zimmerer</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2012</td>
+                                                <td>Taunusschule Bad Camberg Mittlere Reife</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Praktika</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Sommer 2012</td>
+                                                <td>Restaurant Ziegelhütte / Berufsfeld Koch</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sommer 2013</td>
+                                                <td>Schreinerei Höpp / Berufsfeld Schreiner</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herbst 2013</td>
+                                                <td>Zimmerei Michael Dombach / Berufsfeld Zimmerer</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Kenntnisse und Interessen</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Fremdsprachen</td>
+                                                <td>Englisch (sehr gute Kenntnisse)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>IT-Kenntnisse</td>
+                                                <td>Windows (Gute Kenntnisse) / Linux (Grundkenntnisse) / Java / HTML /
+                                                    CSS / Javascript
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hobbys</td>
+                                                <td>Lesen, Musik, Unternehmungen mit Freunden, Computerspiele</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Engagement</th>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Bereich Studium</td>
+                                                <td>Fachschaftsrat (stellvertretender Fachschaftssprecher) <br>
+                                                    STEP-Mentor <br>
+                                                    Berufskommission "Informatik mit Schwerpunkt Mobiler Systeme
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- Modal Footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                            Lebenslauf schließen!
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leah -->
+            <div class="col-lg-4" id="leah">
+                <div class="card">
+                    <img class="card-img-top" src="images/Leah_result.jpg" alt="Leah Hasselbächer">
+                    <div class="card-body">
+                        <h4 class="card-title">Leah Hasselbächer</h4>
+                        <hr>
+                        <p class="card-text">Mein Name ist Leah Noemi Hasselbächer, ich bin 20 Jahre alt und komme ursprünglich aus Weilrod. Für mein Wirtschaftswissenschaften Studium bin ich 2018 nach Gießen gezogen. Vorher habe ich bereits Erfahrungen mit JavaScript gesammelt, als ich mich für ein Stipendium in Informatik vorbereitet habe. Da ich nach zwei Semestern WiWi gemerkt habe, wie sehr mir der IT Bereich fehlt, bin ich zum Wintersemester 19/20 zu SMS gewechselt. Da BWL jedoch immer noch mein Favorit ist, plane ich mich in diesem Bereich zu vertiefen.</p>
+
+                        <!-- Lebenslauf llLeah = "Lebenslauf Leah"-->
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#llLeah">
+                            Mein Lebenslauf &raquo;
+                        </button>
+
+                        <div class="modal fade" id="llLeah">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Mein Lebenslauf</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <th>Persönliche Daten</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Leah Hasselbächer</td>
+                                            </tr>
+                                            <td>Geburtsdatum</td>
+                                            <td>06.06.1999</td>
+                                            <tr>
+                                                <td>Adresse</td>
+                                                <td>Im Brühl 5 <br>
+                                                    35460 Staufenberg
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>E-Mail</td>
+                                                <td>leah.hasselbaecher@mni.thm.de</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ausbildung</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2019 - lfd</td>
+                                                <td>Technische Hochschule Mittelhessen Studiengang SMS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018 - 2019</td>
+                                                <td>JLU Gießen Studiengang Wirtschaftswissenschaften</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015 - 2018</td>
+                                                <td>Maria-Ward-Schule Homburg <br> Abitur Schwerpunkt Wirtschaft </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2014 - 2015</td>
+                                                <td>Mittelpunkt-Schule Dauphetal Mittlere Reife</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Kenntnisse und Interessen</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Fremdsprachen</td>
+                                                <td>Englisch, Latein, Spanisch</td>
+                                            </tr>
+                                            <tr>
+                                                <td>BWL</td>
+                                                <td>3 Jahre Leistungskurs BWL und RWE <br> Verschiedene Buchhaltungs- und Finanzkurse <br> 2 Semester WiWi-Studium <br> Mitglied bei MTP seit 3 Semester
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hobbys</td>
+                                                <td>Meine beiden Katzen, Konzerte, MTP und Freunde treffen</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- Modal Footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                            Lebenslauf schließen!
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ende Lebenslauf -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ardijan -->
+            <div class="col-lg-4" id="ardijan">
+                <div class="card">
+                    <img class="card-img-top" src="images/Ardijan_result.jpg" alt="Ardijan Dulla">
+                    <div class="card-body">
+                        <h4 class="card-title">Ardijan Dulla</h4>
+                        <hr>
+                        <p class="card-text">Mein Name ist Ardijan Dulla. Ich bin 22 Jahre alt und komme aus Gießen.
+                            Meine Eltern kommen aus dem Kosovo und sind mit 20 Jahren aufgrund des Balkankrieges nach
+                            Deutschland gereist. Ich war in Großen-Buseck an der Gesamt-Schule IGS und habe dann mein
+                            Abitur an der Ost-Schule in Gießen absolviert. Nach meinem Abitur gabe ich mir eine 1
+                            jährige Auszeit und bin viel gereist. Nach der Auszeit habe ich mich nach langer Überlegung
+                            in den SMS Studiengang eingeschrieben, da mich IT und BWL schon immer interessiert haben und
+                            es auch zu der jetzigen Zeit sehr gut gepasst hat. Ich habe 2 Bereiche bei denen ich mich
+                            vertiefen wollen würde. Einmal IT und evenutell BWL. Mein Ziel ist es mein Studiengang gut
+                            zu absolvieren und einen Job zu haben der mich glücklich macht und immer wieder
+                            fasziniert. </p>
+
+                        <!-- Lebenslauf llArdijan = "Lebenslauf Ardijan"-->
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#llArdijan">
+                            Mein Lebenslauf &raquo;
+                        </button>
+
+                        <div class="modal fade" id="llArdijan">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Mein Lebenslauf</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <th>Persönliche Daten</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Ardijan Dulla</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Geburtsdatum</td>
+                                                <td>10.11.1997</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Geburtsort</td>
+                                                <td>Gießen</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Familienstand</td>
+                                                <td>ledig</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Staatsangehörigkeit</td>
+                                                <td>Deutsch</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ausbildung</th>
+                                            </tr>
+                                            <tr>
+                                                <td>04/2018 - lfd</td>
+                                                <td>Betriebswirtschaftslehre THM Gießen</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2014 - 2016</td>
+                                                <td>Ostschule Gießen / Abitur</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2008 -2014</td>
+                                                <td>Gesamtschule Busecker-Tal, Großen-Buseck / Mittlere Reife</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2004 - 2008</td>
+                                                <td>Grundschule Goetheschule, Großen-Buseck</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Berufserfahrung</th>
+                                            </tr>
+                                            <tr>
+                                                <td>06/13 - 06/17</td>
+                                                <td>Greenkeeper (Ferienjob), Winnerod</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03/16 - 09/16</td>
+                                                <td>Kassierer Jet-Tankstelle, Gießen</td>
+                                            </tr>
+                                            <tr>
+                                                <td>06/17 - 12/17</td>
+                                                <td>Physiotherapeutische Praxis (Verwaltung), Gießen</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04/15 - 07/15</td>
+                                                <td>Rewe (Lagerarbeiter), Gießen</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Praktika</th>
+                                            </tr>
+                                            <tr>
+                                                <td>05/2012</td>
+                                                <td>Autohaus Otto GmbH, Großen Buseck</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02/2013</td>
+                                                <td>Zahnarztpraxis Keudel, Reiskirchen</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Kenntnisse und Interessen</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Sprachen</td>
+                                                <td>Englisch (Grundkenntnisse) <br> Albanisch (Muttersprache) <br>
+                                                    Spanisch (Schulkenntnisse)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>IT-Kenntnisse</td>
+                                                <td>Word / Excel / Java / HTML / CSS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hobbys</td>
+                                                <td>Fußball, Leichtathletik, Fitness Musikproduktion</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- Modal Footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                            Lebenslauf schließen!
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lebenslauf Ende -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="workingExamples">
+                <h2 class="section-heading">Working Examples</h2>
+                <p class="lead">Hier werden unsere Gruppenergebnisse stehen</p>
+
+            </div>
+
+        </div>
+        <hr>
+    </div>
+</section>
+<footer>
+    <div id="contact" class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="small">
+                    <p>&copy; Marcel Weber (Leah Hasselbächer/Ardijan Dulla)</p>
+                    <p>
+                        <i class="fas fa-home"></i> Technische Hochschule Mittelhessen
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <p class="small">Technische Hochschule Mittelhessen <br>Stellvertretender Fachschaftssprecher
+                    Fachschaft MNI <br>Im Brühl 5 <br>35460 Staufenberg
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="small">
+                    <p>Besucht uns auf unseren Social Media Kanälen</p>
+                    <h2>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-snapchat"></i>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
