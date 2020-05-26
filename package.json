@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ripmaze/portfolio.git"
+    "url": "git+https://github.com/ripmaze/malear.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ripmaze/portfolio/issues"
+    "url": "https://github.com/ripmaze/malear/issues"
   },
-  "homepage": "https://github.com/ripmaze/portfolio#readme"
+  "homepage": "https://github.com/ripmaze/malear#readme"
 }
