@@ -1,2 +1,3 @@
 # Project exclude paths
 /scripts/portfolio.js
+/node_modules/
